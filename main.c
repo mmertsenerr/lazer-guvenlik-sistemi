@@ -434,11 +434,6 @@ static void adc1_init(void)
         PA3 -> ADC1_IN4
     */
     /*
-    ADC1->PCSEL |= (1U << LDR1_CHANNEL);
-    ADC1->PCSEL |= (1U << LDR2_CHANNEL);
-    ADC1->PCSEL |= (1U << LDR3_CHANNEL);
-    */
-    /*
         Uzun sample time.
     */
     ADC1->SMPR1 &= ~((7U << ADC_SMPR1_SMP1_Pos) |
